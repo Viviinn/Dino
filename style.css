@@ -19,21 +19,11 @@ h1 {
   margin-bottom: 20px;
 }
 
-.dino-image {
-  width: 300px;
-  max-width: 80%;
+
+.dino-video {
+  width: 50vw; /* 屏幕宽度的50% */
+  max-width: 400px;
+  height: auto;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  animation: spin 6s linear infinite;
 }
 
-
-
-@keyframes spin {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
-}
