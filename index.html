@@ -7,10 +7,19 @@
   <title>Your Dinosaur</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
+<script>
+  const video = document.querySelector(".dino-video");
+  video.addEventListener("ended", () => {
+    video.currentTime = 0;
+    video.play();
+  });
+</script>
+
 <body>
   <div class="container">
     <video class="dino-video" autoplay muted loop playsinline>
-      <source src="Spinosaur.mp4" type="video/mp4">
+      <source src="spinosaur.mp4" type="video/mp4">
     </video>
   </div>
 </body>
